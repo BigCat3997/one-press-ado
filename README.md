@@ -26,13 +26,14 @@ This is all modules as technique stacks was required by the flow.
 Azure Devops:
   - Project
     - one-press-ado[^1]
+      - Repository
       - Service connection
         - infrastructure-vars-vault-service-connection
         - project-dev-vars-vault-service-connection
         - project-uat-vars-vault-service-connection
-    - weather-forecast[^2] (the real project will implement the core project)
+    - weather-forecast[^2]
       - Service connection
-        - infrastructure-vars-vault-service-connection-weather-forecast
+        - infrastructure-vars-vault-service-connection-weather-forecast[^3]
         - project-dev-vars-vault-service-connection-weather-forecast
         - project-uat-vars-vault-service-connection-weather-forecast
 
