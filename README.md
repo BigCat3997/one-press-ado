@@ -24,22 +24,22 @@ This is the way describe detail how to set up this flow in Azure DevOps.
 This is all modules as technique stacks was required by the flow.
 
 Azure Devops:
-    - Project
-        - one-press-ado[^1].
-            - Service connection
-                - infrastructure-vars-vault-service-connection.
-                - project-dev-vars-vault-service-connection.
-                - project-uat-vars-vault-service-connection.
-        - weather-forecast[^2] (the real project will implement the core project).
-            - Service connection
-                - infrastructure-vars-vault-service-connection-weather-forecast[^3].
-                - project-dev-vars-vault-service-connection-weather-forecast.
-                - project-uat-vars-vault-service-connection-weather-forecast.
+  - Project
+    - one-press-ado[^1]
+      - Service connection
+        - infrastructure-vars-vault-service-connection
+        - project-dev-vars-vault-service-connection
+        - project-uat-vars-vault-service-connection
+    - weather-forecast[^2] (the real project will implement the core project)
+      - Service connection
+        - infrastructure-vars-vault-service-connection-weather-forecast
+        - project-dev-vars-vault-service-connection-weather-forecast
+        - project-uat-vars-vault-service-connection-weather-forecast
 
 Azure Services:
-    - Azure Key Vault
-        - Infrastructure vault (contains all secrets involving infrastructure such as k8s credentials, docker credentials, git credentials, etc).
-        - Project vaults (contain all secrets that involve a specific project by its environment; I prefer each vault for each environment that you have).
+  - Azure Key Vault
+    - Infrastructure vault (contains all secrets involving infrastructure such as k8s credentials, docker credentials, git credentials, etc)
+    - Project vaults (contain all secrets that involve a specific project by its environment; I prefer each vault for each environment that you have)
 
 ## License
 
