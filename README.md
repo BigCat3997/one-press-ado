@@ -16,7 +16,7 @@ This project is designed to provide the way to implement one-press project in Az
 
 ## Usage
 
-foo
+[Usage](docs/usage.md)
 
 ## Modules
 
